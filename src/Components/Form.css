@@ -1,0 +1,142 @@
+/* Scoped styles for FormPage.jsx */
+.form-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    animation: pageFadeIn 1.5s ease-out;
+  }
+  
+  .form-page h2, .form-page h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    animation: textFadeIn 1s ease-in;
+  }
+  
+  .form-page h3 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-page div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-page form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transform: translateY(-30px);
+    animation: formSlideIn 0.6s ease-out forwards;
+  }
+  
+  .form-page input,
+  .form-page select,
+  .form-page button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input and select box animations on focus */
+  .form-page input:focus,
+  .form-page select:focus {
+    outline: none;
+    border-color: #5c6bc0;
+    box-shadow: 0 0 10px rgba(92, 108, 192, 0.3);
+  }
+  
+  .form-page button {
+    background-color: #5c6bc0;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+  }
+  
+  .form-page button:hover {
+    background-color: #3f4c9d;
+  }
+  
+  .form-page button:active {
+    background-color: #2a3b76;
+    transform: scale(0.98);
+  }
+  
+  .form-page button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form-page p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Animation Keyframes */
+  
+  @keyframes formSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pageFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design for mobile view */
+  @media (max-width: 600px) {
+    .form-page form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .form-page h2 {
+      font-size: 2rem;
+    }
+  
+    .form-page h3 {
+      font-size: 1.5rem;
+    }
+  }
+  

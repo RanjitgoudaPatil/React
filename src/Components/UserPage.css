@@ -1,0 +1,104 @@
+/* Scoped CSS for UserPage */
+
+.user-page {
+    background-color: #fea49f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    animation: pageFadeIn 1s ease-out;
+  }
+  
+  .user-page h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: textFadeIn 1.2s ease-in;
+  }
+  
+  .user-table {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: tableSlideIn 1s ease-out forwards;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .user-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  @keyframes pageFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes tableSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .user-table {
+      width: 95%;
+    }
+  
+    .user-table th,
+    .user-table td {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
+  
+    .user-page h2 {
+      font-size: 2rem;
+    }
+  }
+  

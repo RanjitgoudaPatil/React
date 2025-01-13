@@ -1,0 +1,82 @@
+/* Map Page General Styles */
+.map-page {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Location List Styling */
+  .location-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .location-item {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease;
+  }
+  
+  .location-item h3 {
+    font-size: 22px;
+    color: #007bff;
+  }
+  
+  .location-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Conditional Styles */
+  .location-item.available {
+    background-color: #28a745;  /* Green for available locations */
+    color: white;
+  }
+  
+  .location-item.error {
+    background-color: #dc3545;  /* Red for error locations */
+    color: white;
+  }
+  
+  /* Hover Effect for Location Items */
+  .location-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .location-item.available:hover {
+    background-color: #218838;  /* Darker green on hover */
+  }
+  
+  .location-item.error:hover {
+    background-color: #c82333;  /* Darker red on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .map-page {
+      padding: 15px;
+    }
+  
+    .location-item h3 {
+      font-size: 18px;
+    }
+  
+    .location-item p {
+      font-size: 14px;
+    }
+  }
+  

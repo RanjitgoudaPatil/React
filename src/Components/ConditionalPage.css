@@ -1,0 +1,68 @@
+/* Basic styling */
+.conditional-container {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #007bff;
+  }
+  
+  .status-section {
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .message-box.success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .message-box.error {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .conditional-container {
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
